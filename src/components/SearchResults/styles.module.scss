@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  list-style-type: none;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    & > button {
+      display: none;
+    }
+    &:hover > button {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

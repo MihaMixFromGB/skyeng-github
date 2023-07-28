@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnSearch {
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #36454f;
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    border: 1px solid #36454f;
+    background-color: #fff;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}

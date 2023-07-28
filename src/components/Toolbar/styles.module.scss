@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.searchParameter {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  &__label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #36454f;
+    margin-bottom: 5px;
+  }
+  &__input {
+    font-size: 14px;
+    color: #36454f;
+    padding: 5px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
