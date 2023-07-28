@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 interface MessageProps extends Message {}
 
 export function MessageBox({ type, text }: MessageProps) {
-  const textClasses = `${styles.text} ${
+  const textClasses = `${styles.container} ${styles.text} ${
     type === "error" ? styles.text_error : ""
   }`;
 

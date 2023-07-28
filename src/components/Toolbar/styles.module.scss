@@ -21,8 +21,11 @@
   }
   &__input {
     font-size: 14px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #fff;
     color: #36454f;
-    padding: 5px;
+    padding: 0 5px;
     &::placeholder {
       font-size: 14px;
     }
