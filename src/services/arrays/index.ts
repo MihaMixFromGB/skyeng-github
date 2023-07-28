@@ -33,7 +33,7 @@ export function splitRange({
     };
   }
 
-  if (start - current <= maxCount && current < start + maxCount) {
+  if (start - current <= maxCount && current < start + maxCount - 1) {
     return {
       firstPart: getArrayOfNumbers(start, start + maxCount - 1),
       secondPart: [end],
@@ -41,7 +41,7 @@ export function splitRange({
     };
   }
 
-  if (end - current <= maxCount && current > end - maxCount) {
+  if (end - current <= maxCount && current > end - (maxCount - 1)) {
     return {
       firstPart: [start],
       secondPart: getArrayOfNumbers(end - (maxCount - 1), end),

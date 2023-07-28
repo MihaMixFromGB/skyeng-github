@@ -48,16 +48,18 @@ describe("service/arrays", () => {
       const start = 1;
       const end = 6;
       const maxCount = 3;
+      const current = 4;
       const { firstPart, secondPart, hasDelimiter } = splitRange({
         start,
         end,
         maxCount,
-        current: 4,
+        current,
       });
       expect(hasDelimiter).toBeTruthy();
-      expect(firstPart[0]).toBe(start);
-      expect(firstPart.length).toBe(1);
-      expect(secondPart.length).toBe(maxCount);
+      expect(firstPart[0]).toBe(current - maxCount + 2);
+      expect(firstPart.length).toBe(maxCount);
+      expect(secondPart[0]).toBe(end);
+      expect(secondPart.length).toBe(1);
     });
 
     it("with delimiter, shifting a first part", () => {
