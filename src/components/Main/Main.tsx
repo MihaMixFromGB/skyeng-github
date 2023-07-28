@@ -38,7 +38,7 @@ export function Main() {
   const items = data && !data.message ? data.items : [];
   const total_count = data && !data.message ? data.total_count : 0;
   const users = items.map<User>((item, idx) => ({
-    num: idx + 1,
+    num: idx + 1 + (currentPage - 1) * perPage,
     login: item.login,
     avatar_url: item.avatar_url,
     html_url: item.html_url,
