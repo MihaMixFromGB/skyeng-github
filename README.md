@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 There are made five unit tests for working with arrays (/src/services/arrays).\
-There is used SWR for making requests to the GitHub API (https://swr.vercel.app/).\
+There is used SWR for making requests to the GitHub API (https://swr.vercel.app).\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
